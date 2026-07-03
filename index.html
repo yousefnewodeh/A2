@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A soft-green luxury birthday journey for Aya, born July 19." />
+  <title>Aya's $10,000,000 Birthday Journey 🍀✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="doodle-field" id="doodle-field" aria-hidden="true"></div>
+  <div class="cursor-light" id="cursor-light" aria-hidden="true"></div>
+
+  <aside class="side-rail" aria-label="Quick sections">
+    <a href="#home" aria-label="Home"><span></span></a>
+    <a href="#journey" aria-label="Birthday journey"><span></span></a>
+    <a href="#letter" aria-label="Birthday letter"><span></span></a>
+    <a href="#finale" aria-label="Finale"><span></span></a>
+  </aside>
+
+  <header class="landing" id="home">
+    <nav class="nav">
+      <a href="#home" class="logo" aria-label="Aya birthday homepage">
+        <b>A</b><span>Aya Day</span>
+      </a>
+      <div class="nav-actions">
+        <a href="#letter">Message</a>
+        <button id="party-button" type="button">Party Mode</button>
+      </div>
+    </nav>
+
+    <section class="ticket" aria-labelledby="main-title">
+      <div class="ticket-left">
+        <p class="overline">Private July 19 pass</p>
+        <h1 id="main-title">Happy Birthday, Aya</h1>
+        <p class="lead">
+          A soft-green birthday universe built with stars, cats, gym energy, lucky clovers, and the hand-drawn party doodles you wanted scattered everywhere.
+        </p>
+
+        <div class="countdown" aria-label="Countdown to Aya's birthday">
+          <div><strong id="days">--</strong><span>days</span></div>
+          <div><strong id="hours">--</strong><span>hours</span></div>
+          <div><strong id="minutes">--</strong><span>mins</span></div>
+          <div><strong id="seconds">--</strong><span>secs</span></div>
+        </div>
+        <p class="countdown-note" id="countdown-note">Counting down to July 19.</p>
+
+        <div class="cta-row">
+          <a href="#journey" class="btn primary">Start the birthday journey</a>
+          <a href="#letter" class="btn secondary">Read the message</a>
+        </div>
+      </div>
+
+      <div class="ticket-right" aria-hidden="true">
+        <div class="orbit-ring ring-one"></div>
+        <div class="orbit-ring ring-two"></div>
+        <div class="birthday-globe">
+          <span class="planet-icon space">🪐</span>
+          <span class="planet-icon cat">🐱</span>
+          <span class="planet-icon gym">🏋️</span>
+          <span class="planet-icon clover">🍀</span>
+          <div class="globe-core">
+            <span>07</span>
+            <b>19</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mini-gallery" aria-label="Original theme drawings">
+      <figure>
+        <img src="assets/main-green-theme.png" alt="Soft green color theme" />
+        <figcaption>Main theme color</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/extracted-party-doodles.png" alt="Extracted white party hand drawings" />
+        <figcaption>Extracted hand drawings</figcaption>
+      </figure>
+      <div class="mini-note">
+        <span>$10,000,000</span>
+        premium birthday layout, rebuilt from scratch.
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="journey" id="journey">
+      <div class="section-title">
+        <p class="overline">The new structure</p>
+        <h2>A birthday journey instead of normal sections</h2>
+        <p>Scroll through Aya's four celebration stops. Each one has its own mood, wish, and little interactive surprise.</p>
+      </div>
+
+      <div class="route" aria-label="Aya birthday journey route">
+        <article class="stop stop-space">
+          <div class="stop-number">01</div>
+          <div class="stop-card">
+            <span class="stop-icon">🌌</span>
+            <h3>Galaxy Gate</h3>
+            <p>Aya deserves a sky that feels huge, bright, and full of new stars to chase.</p>
+            <button class="wish-button" data-wish="Aya, may this year open like a whole galaxy of good chances.">Unlock galaxy wish</button>
+          </div>
+        </article>
+
+        <article class="stop stop-cat">
+          <div class="stop-number">02</div>
+          <div class="stop-card">
+            <span class="stop-icon">🐾</span>
+            <h3>Cat Comfort Café</h3>
+            <p>Soft, cute, peaceful energy for the person who made difficult days feel lighter.</p>
+            <button class="wish-button" data-wish="Aya, may your days be soft, cozy, protected, and full of tiny happy moments.">Unlock cat wish</button>
+          </div>
+        </article>
+
+        <article class="stop stop-gym">
+          <div class="stop-number">03</div>
+          <div class="stop-card">
+            <span class="stop-icon">💪</span>
+            <h3>Gym Star Arena</h3>
+            <p>For the strength in her advice, the confidence in her compliments, and the way she keeps showing up.</p>
+            <button class="wish-button" data-wish="Aya, may you feel strong, proud, confident, and unstoppable in every goal you choose.">Unlock gym wish</button>
+          </div>
+        </article>
+
+        <article class="stop stop-clover">
+          <div class="stop-number">04</div>
+          <div class="stop-card">
+            <span class="stop-icon">🍀</span>
+            <h3>Clover Luck Garden</h3>
+            <p>A green lucky garden because having Aya in someone's life already feels like luck.</p>
+            <button class="wish-button" data-wish="Aya, may luck find you in sweet, unexpected ways all year.">Unlock clover wish</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="wish-screen" id="wish-screen" aria-live="polite">
+        Press any stop to reveal a birthday wish ✨
+      </div>
+    </section>
+
+    <section class="gratitude-wall" id="gratitude">
+      <div class="section-title compact">
+        <p class="overline">Why Aya gets the luxury version</p>
+        <h2>The support wall</h2>
+      </div>
+      <div class="wall-grid">
+        <div class="wall-card large"><span>01</span><h3>She supported me</h3><p>Not loudly for attention, but in a way that actually stayed with me.</p></div>
+        <div class="wall-card"><span>02</span><h3>She complimented me</h3><p>Every now and then, she made me feel seen.</p></div>
+        <div class="wall-card"><span>03</span><h3>She gave advice</h3><p>The kind that helps when I really need it.</p></div>
+        <div class="wall-card large"><span>04</span><h3>She never got sick of me</h3><p>That patience means more than a simple thank-you can explain.</p></div>
+      </div>
+    </section>
+
+    <section class="letter-zone" id="letter">
+      <div class="letter-envelope">
+        <div class="stamp">🍀<br><small>07/19</small></div>
+        <p class="overline">Main birthday message</p>
+        <h2>Dear Aya,</h2>
+        <div class="letter-copy">
+          <p>Happy Birthday! I hope July 19 feels as bright, warm, and special as the kindness you keep giving so easily.</p>
+          <p>Thank you for supporting me, for complimenting me every now and then, for giving me advice when I needed it, and for never getting sick of me. Even the small things you said stayed with me more than you probably realized.</p>
+          <p>You made difficult days feel lighter, and you made me feel encouraged, seen, and understood. You deserve a year that gives all of that goodness back to you: peaceful moments, lucky surprises, strong progress toward your goals, cat-level comfort, and a sky full of stars reminding you how appreciated you are.</p>
+          <p class="signoff">Happy Birthday, Aya. I am genuinely grateful for you. ✨</p>
+        </div>
+        <button type="button" class="btn primary" id="letter-pop">Make the letter sparkle</button>
+      </div>
+    </section>
+
+    <section class="surprise-lab">
+      <div class="section-title compact">
+        <p class="overline">Tiny interactive birthday lab</p>
+        <h2>Choose Aya's birthday effect</h2>
+      </div>
+      <div class="effect-grid">
+        <button data-effect="clovers">Clover rain 🍀</button>
+        <button data-effect="cats">Cat parade 🐱</button>
+        <button data-effect="stars">Star burst ✨</button>
+        <button data-effect="gym">Power confetti 💪</button>
+      </div>
+    </section>
+
+    <section class="finale" id="finale">
+      <div class="finale-panel">
+        <p class="overline">Final certificate</p>
+        <h2>Aya's one-of-one birthday universe</h2>
+        <p>
+          Certified as a soft-green luxury celebration powered by gratitude, decorated with hand drawings, protected by cats, strengthened by gym energy, blessed by clovers, and launched into space for July 19.
+        </p>
+        <button type="button" class="btn primary" id="finale-button">Launch the finale</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made for Aya's July 19 birthday.</p>
+    <a href="#home">Back to the top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
